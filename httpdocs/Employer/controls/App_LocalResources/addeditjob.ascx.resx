@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddUpdate.Text" xml:space="preserve">
+    <value>Save for now. I will publish later.</value>
+  </data>
+  <data name="btnAddUpdatePublish.Text" xml:space="preserve">
+    <value>I want to publish now</value>
+  </data>
+  <data name="ddlEmploymentType_0.Text" xml:space="preserve">
+    <value>Select One</value>
+  </data>
+  <data name="ddlEmploymentType_0.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCategories.Text" xml:space="preserve">
+    <value>*Select Industries</value>
+  </data>
+  <data name="lblEmploymentType.Text" xml:space="preserve">
+    <value>*Employment type</value>
+  </data>
+  <data name="lblJobBenefits.Text" xml:space="preserve">
+    <value>Job Benefits</value>
+  </data>
+  <data name="lblJobDescription.Text" xml:space="preserve">
+    <value>*Job Description</value>
+  </data>
+  <data name="lblJobKeywords.Text" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="lblJobLocation.Text" xml:space="preserve">
+    <value>*Job Location</value>
+  </data>
+  <data name="lblJobRequirements.Text" xml:space="preserve">
+    <value>Job Requirements</value>
+  </data>
+  <data name="lblJobTitle.Text" xml:space="preserve">
+    <value>*Job Title</value>
+  </data>
+  <data name="lblJobZip.Text" xml:space="preserve">
+    <value>*Job Zip Code</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>*Position</value>
+  </data>
+  <data name="lstCategories.title" xml:space="preserve">
+    <value>&lt;span style="white-space: nowrap;"&gt;Holding down the "Ctrl" key while &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt; selecting  will allow the selection &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;of multiple industries &lt;/span&gt;</value>
+  </data>
+  <data name="regJobBenefits.ErrorMessage" xml:space="preserve">
+    <value>&lt;br /&gt;The length of the job benefits text is exceeding the character limit for this field. Please provide a shorter version of the job benefits.</value>
+  </data>
+  <data name="regJobDescription.ErrorMessage" xml:space="preserve">
+    <value>&lt;br /&gt;The length of the job description is exceeding the character limit for this field. Please provide a shorter version of the job description.</value>
+  </data>
+  <data name="regJobRequirements.ErrorMessage" xml:space="preserve">
+    <value>&lt;br /&gt;The length of the job requirements is exceeding the character limit for this field. Please provide a shorter version of the job requirements.</value>
+  </data>
+  <data name="regJobZip.ErrorMessage" xml:space="preserve">
+    <value>Invalid zip code</value>
+  </data>
+  <data name="reqCategories.ErrorMessage" xml:space="preserve">
+    <value>Industry is required</value>
+  </data>
+  <data name="reqEmploymentType.ErrorMessage" xml:space="preserve">
+    <value>Employment type is required</value>
+  </data>
+  <data name="reqJobDescription.ErrorMessage" xml:space="preserve">
+    <value>Description is required</value>
+  </data>
+  <data name="reqJobLocation.ErrorMessage" xml:space="preserve">
+    <value>Location is required</value>
+  </data>
+  <data name="reqJobTitle.ErrorMessage" xml:space="preserve">
+    <value>Title is required</value>
+  </data>
+  <data name="reqJobZip.ErrorMessage" xml:space="preserve">
+    <value>Zip code is required</value>
+  </data>
+  <data name="reqPosition.ErrorMessage" xml:space="preserve">
+    <value>Position is required</value>
+  </data>
+  <data name="strShowBenefits" xml:space="preserve">
+    <value>Let me enter the benefits for this position:</value>
+  </data>
+  <data name="strShowRequirements" xml:space="preserve">
+    <value>Let me enter the requirements for this position:</value>
+  </data>
+  <data name="txtJobLocation.title" xml:space="preserve">
+    <value>&lt;span style="white-space: nowrap;"&gt;Text describing the location&lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;[e.g., Downtown Chicago,&lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;600 W Chicago Ave,Chicago, IL]&lt;/span&gt;</value>
+  </data>
+  <data name="txtJobZip.title" xml:space="preserve">
+    <value>&lt;span style="white-space: nowrap;"&gt;Must be in one of two formats: &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt; [99999 or 99999-9999]&lt;/span&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="HristoEvtimov.Websites.Work.Web.MasterPage" %>
+<%@ Register TagName="loginstatus" TagPrefix="he" Src="~/controls/loginstatus.ascx" %>
+<%@ Register TagName="shoppingcartlink" TagPrefix="he" Src="~/controls/shoppingcartlink.ascx" %>
+<%@ Register TagName="systemmessage" TagPrefix="he" Src="~/controls/systemmessage.ascx" %>
+<%@ Register TagName="jobsearchinput" TagPrefix="he" Src="~/controls/jobsearchinput.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/js/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript" language="javascript">
+        $.noConflict();
+    </script>
+    <script src="/js/bootstrap.min.js" type="text/javascript" language="javascript"></script>
+    
+    <link rel="Stylesheet" type="text/css" href="/css/styles.css"/>
+    <link rel="Stylesheet" type="text/css" href="/css/bootstrap-theme.min.css"/>
+    <link rel="Stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="navbar-header navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <button type="button" onclick="return false;" class="navbar-toggle" data-toggle="collapse" data-target="#<%= divCollapsableNavigation.ClientID %>">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a id="aLogo" runat="server" class="logo">
+                                <div class="city_name"><%= GetGlobalResourceObject("GlobalResources", "strCityName").ToString() %></div>
+                                <img src="/images/logo.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="navbar-form header_search_input">
+                                <he:jobsearchinput id="heJobSearchInput" runat="server"></he:jobsearchinput>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="collapse navbar-collapse" id="divCollapsableNavigation" runat="server">
+                    <asp:PlaceHolder ID="phMenu" runat="server"></asp:PlaceHolder>
+                    <ul class="nav navbar-nav">
+                        <he:loginstatus id="heLoginStatus" runat="server"/>
+                        <li>
+                            <he:shoppingcartlink id="heShoppingCartLink" runat="server"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>        
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <he:systemmessage id="heSystemMessage" runat="server"/>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <asp:ContentPlaceHolder id="MainPanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="footer">
+                    <ul class="footer_links">
+                        <li><asp:HyperLink ID="hypFooter1" runat="server"></asp:HyperLink></li>
+                        <li class="footer_separator">&nbsp;|&nbsp;</li>
+                        <li><asp:HyperLink ID="hypFooter2" runat="server"></asp:HyperLink></li>
+                        <li class="footer_separator">&nbsp;|&nbsp;</li>
+                        <li><asp:HyperLink ID="hypFooter5" runat="server"></asp:HyperLink></li>
+                        <li class="footer_separator">&nbsp;|&nbsp;</li>
+                        <li><asp:HyperLink ID="hypFooter3" runat="server"></asp:HyperLink></li>
+                        <li class="footer_separator">&nbsp;|&nbsp;</li>
+                        <li><asp:HyperLink ID="hypFooter4" runat="server"></asp:HyperLink></li>
+                    </ul>
+                    <div class="footer_links_separator"></div>
+                    <ul class="footer_links" style="margin-left:20%;margin-right:20%;">
+                        <li><asp:HyperLink ID="hypFooter6" runat="server"></asp:HyperLink></li>
+                        <li class="footer_separator">&nbsp;|&nbsp;</li>
+                        <li><asp:HyperLink ID="hypFooter7" runat="server"></asp:HyperLink></li>
+                    </ul>
+                    <div class="footer_links_separator"></div>
+                    <div class="footer_copyright text-muted">
+                        <%= DateTime.Now.Year > 2014 ? 
+                            String.Format(GetGlobalResourceObject("GlobalResources", "strFooterCopyright").ToString(), "2014-" + DateTime.Now.Year) : 
+                            String.Format(GetGlobalResourceObject("GlobalResources", "strFooterCopyright").ToString(), "2014") %>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>
+                        <%= System.Web.Configuration.WebConfigurationManager.AppSettings["SECURITY_SEAL"].ToString() %>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <asp:Literal ID="litGoogleAnalytics" runat="server"></asp:Literal>
+    </form>
+</body>
+</html>

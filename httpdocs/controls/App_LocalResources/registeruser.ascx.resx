@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSubmit.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="chkbOkToEmail.Text" xml:space="preserve">
+    <value>Email me about website news, services, and promotions?</value>
+  </data>
+  <data name="chkbPublicResume.Text" xml:space="preserve">
+    <value>Allow employers to view your resume?</value>
+  </data>
+  <data name="chkbResumeHelp.Text" xml:space="preserve">
+    <value>I would like a free professional critique from resume experts "&lt;a href="http://www.yourresumewiz.com/" target="_blank"&gt;YourResumeWiz&lt;/a&gt;" – a division of &lt;br /&gt;&lt;a href="http://www.clearpointhco.com/" target="_blank"&gt;ClearPointHCO, LLC&lt;/a&gt;.</value>
+  </data>
+  <data name="chkbSaveCoverLetter.Text" xml:space="preserve">
+    <value>Overwrite my profile cover letter with this version</value>
+  </data>
+  <data name="chkbSaveResume.Text" xml:space="preserve">
+    <value>Overwrite my profile resume with this version</value>
+  </data>
+  <data name="compUserPasswordRepeat.ErrorMessage" xml:space="preserve">
+    <value>Passwords must match</value>
+  </data>
+  <data name="lblCoverLetter.Text" xml:space="preserve">
+    <value>Cover letter:</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>*Email:</value>
+  </data>
+  <data name="lblFirstName.Text" xml:space="preserve">
+    <value>*First Name:</value>
+  </data>
+  <data name="lblLastName.Text" xml:space="preserve">
+    <value>*Last Name:</value>
+  </data>
+  <data name="lblPhone.Text" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lblRegisterChoice.Text" xml:space="preserve">
+    <value>Also create an account?</value>
+  </data>
+  <data name="lblResume.Text" xml:space="preserve">
+    <value>*Resume:</value>
+  </data>
+  <data name="lblUserCategories.Text" xml:space="preserve">
+    <value>Your preferred industries?</value>
+  </data>
+  <data name="lblUserPassword.Text" xml:space="preserve">
+    <value>*Password</value>
+  </data>
+  <data name="lblUserPasswordRepeat.Text" xml:space="preserve">
+    <value>*Repeat Password</value>
+  </data>
+  <data name="lstbUserCategories.title" xml:space="preserve">
+    <value>&lt;span style="white-space: nowrap;"&gt;Holding down the "Ctrl" key while &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt; selecting  will allow the selection &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;of multiple industries &lt;/span&gt;</value>
+  </data>
+  <data name="rdbRegisterNo.Text" xml:space="preserve">
+    <value>Not right now</value>
+  </data>
+  <data name="rdbRegisterYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="regCoverLetter.ErrorMessage" xml:space="preserve">
+    <value>&lt;br /&gt;The length of the cover letter is exceeding the character limit for this field. Please provide a shorter version of the cover letter.</value>
+  </data>
+  <data name="regEmail.ErrorMessage" xml:space="preserve">
+    <value>Invalid email address</value>
+  </data>
+  <data name="regResume.ErrorMessage" xml:space="preserve">
+    <value>&lt;br /&gt;The length of the resume is exceeding the character limit for this field. Please provide a shorter version of the resume.</value>
+  </data>
+  <data name="regUserPassword.ErrorMessage" xml:space="preserve">
+    <value>Invalid password</value>
+  </data>
+  <data name="reqEmail.ErrorMessage" xml:space="preserve">
+    <value>Email is required</value>
+  </data>
+  <data name="reqFirstName.ErrorMessage" xml:space="preserve">
+    <value>First name is required</value>
+  </data>
+  <data name="reqLastName.ErrorMessage" xml:space="preserve">
+    <value>Last name is required</value>
+  </data>
+  <data name="reqUserPassword.ErrorMessage" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+  <data name="reqUserPasswordRepeat.ErrorMessage" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+  <data name="strApplicationFailure" xml:space="preserve">
+    <value>We are sorry. Your job application was not submitted due to an error. Please try again.</value>
+  </data>
+  <data name="strApplicationSuccess" xml:space="preserve">
+    <value>Your job application was submitted successfully</value>
+  </data>
+  <data name="strApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="strErrorEmailNotSent" xml:space="preserve">
+    <value>There was a problem with the creation of your account. An administrator will look into it.</value>
+  </data>
+  <data name="strErrorUserCreationInvalidEmail" xml:space="preserve">
+    <value>Your account was not created due to an invalid email address. Please try again with a different email address.</value>
+  </data>
+  <data name="strErrorUserCreationInvalidPassword" xml:space="preserve">
+    <value>Your account was not created due to an invalid password. Please try again with a different password.</value>
+  </data>
+  <data name="strErrorUserCreationUserExists" xml:space="preserve">
+    <value>A user with this email address already exists. &lt;br /&gt;You can try to &lt;a href="{0}"&gt;login&lt;/a&gt; or &lt;a href="{1}"&gt;reset your password&lt;/a&gt; instead.</value>
+  </data>
+  <data name="strErrorUserNotCreated" xml:space="preserve">
+    <value>There was a problem with the creation of your account. An administrator will look into it.</value>
+  </data>
+  <data name="strHeadingJobApplication" xml:space="preserve">
+    <value>Job application for {0}</value>
+  </data>
+  <data name="strHeadingRegister" xml:space="preserve">
+    <value>Job seeker registration</value>
+  </data>
+  <data name="strRegistrationFailure" xml:space="preserve">
+    <value>There was a problem with the creation of your account. An administrator will look into it.</value>
+  </data>
+  <data name="strRegistrationSuccess" xml:space="preserve">
+    <value>Your account was created but has not been verified yet. We sent you an email message containing a verification link. Please click on the verification link to activate your account.</value>
+  </data>
+  <data name="strRequiredLegend" xml:space="preserve">
+    <value>items marked with &lt;b&gt;*&lt;/b&gt; are required</value>
+  </data>
+  <data name="strSubmitSuccess" xml:space="preserve">
+    <value>Your form was submitted successfully</value>
+  </data>
+  <data name="txtUserPassword.title" xml:space="preserve">
+    <value>&lt;span style="white-space: nowrap;"&gt;Must contain at least one of each: &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt; [digit, lowercase letter, &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;uppercase letter] &lt;/span&gt;&lt;br /&gt;&lt;span style="white-space: nowrap;"&gt;Must be at least 8 characters long&lt;/span&gt;</value>
+  </data>
+</root>
