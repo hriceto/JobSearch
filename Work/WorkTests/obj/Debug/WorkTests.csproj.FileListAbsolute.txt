@@ -1,0 +1,15 @@
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\WorkTests.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\WorkTests.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HristoEvtimov.Websites.Work.WorkLibrary.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HtmlAgilityPack.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\AuthorizeNet.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\Newtonsoft.Json.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HristoEvtimov.Websites.Work.WorkLibrary.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HtmlAgilityPack.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\HtmlAgilityPack.xml
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\bin\Debug\Newtonsoft.Json.xml
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\obj\Debug\WorkTests.csprojResolveAssemblyReference.cache
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\obj\Debug\WorkTests.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\obj\Debug\WorkTests.pdb

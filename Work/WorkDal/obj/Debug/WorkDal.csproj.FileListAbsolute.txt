@@ -1,0 +1,12 @@
+C:\DEVELOPMENT\Work\Work\WorkDal\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\Work\Work\WorkDal\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\Work\Work\WorkDal\obj\Debug\ResolveAssemblyReference.cache
+C:\DEVELOPMENT\Work\Work\WorkDal\obj\Debug\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\Work\Work\WorkDal\obj\Debug\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\Work\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\Work\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\obj\Debug\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\obj\Debug\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\obj\Debug\WorkDal.csprojResolveAssemblyReference.cache

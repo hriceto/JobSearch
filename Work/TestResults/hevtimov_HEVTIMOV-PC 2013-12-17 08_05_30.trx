@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="41cf7065-a17f-4c59-92e6-630b9fa63fc0" name="hevtimov@HEVTIMOV-PC 2013-12-17 08:05:30" runUser="hevtimov-PC\hevtimov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="42aaf124-e037-48c0-99b0-4f81207af726">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="hevtimov_HEVTIMOV-PC 2013-12-17 08_05_30">
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll" />
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+            <RuntimeResolution>
+              <Directory path="%SystemDrive%\DEVELOPMENT\TFS\jobs website\Main\httpdocs" includeSubDirectories="true" />
+            </RuntimeResolution>
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-17T08:05:30.1816551-06:00" queuing="2013-12-17T08:05:33.6518536-06:00" start="2013-12-17T08:05:33.9128685-06:00" finish="2013-12-17T08:05:53.6960000-06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="86268f4a-5134-5e84-df8c-506e11ef3a05">
+      <Execution id="ed5b5faf-98d4-4c25-abe1-75f9cf79d47a" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.UserAccountTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="86268f4a-5134-5e84-df8c-506e11ef3a05" executionId="ed5b5faf-98d4-4c25-abe1-75f9cf79d47a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ed5b5faf-98d4-4c25-abe1-75f9cf79d47a" testId="86268f4a-5134-5e84-df8c-506e11ef3a05" testName="AccountEmailVerification_CreateEmail_ShouldReturnTrue" computerName="HEVTIMOV-PC" duration="00:00:17.7749731" startTime="2013-12-17T08:05:34.1698832-06:00" endTime="2013-12-17T08:05:53.5579921-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed5b5faf-98d4-4c25-abe1-75f9cf79d47a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

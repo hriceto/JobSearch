@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "work.evtimov", "http://work.evtimov", "{7EC2ECBB-2DB4-4DFC-8D30-3B3864959FA3}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}|HristoEvtimov.Websites.Work.WorkDal.dll;{B1694B26-8DAB-4089-8276-327F7B7845DB}|HristoEvtimov.Websites.Work.WorkLibrary.dll;{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}|HristoEvtimov.Websites.Work.WorkSearch.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/work.evtimov"
+		Debug.AspNetCompiler.PhysicalPath = "..\httpdocs\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\work.evtimov\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/work.evtimov"
+		Release.AspNetCompiler.PhysicalPath = "..\httpdocs\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\work.evtimov\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\httpdocs\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkDal", "WorkDal\WorkDal.csproj", "{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkSearch", "WorkSearch\WorkSearch.csproj", "{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLibrary", "WorkLibrary\WorkLibrary.csproj", "{B1694B26-8DAB-4089-8276-327F7B7845DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTests", "WorkTests\WorkTests.csproj", "{6E8A96ED-61F7-4B9C-8780-F60995A2D6FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5567E11D-C260-47BA-BC77-AE9B438AC790}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		Work.vsmdi = Work.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://hristo-pc:8080/tfs/jobs
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = http://work.evtimov
+		SccProjectName1 = ../httpdocs
+		SccLocalPath1 = ..\\httpdocs
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = WorkDal\\WorkDal.csproj
+		SccProjectName2 = WorkDal
+		SccLocalPath2 = WorkDal
+		SccProjectUniqueName3 = WorkSearch\\WorkSearch.csproj
+		SccProjectName3 = WorkSearch
+		SccLocalPath3 = WorkSearch
+		SccProjectUniqueName4 = WorkLibrary\\WorkLibrary.csproj
+		SccProjectName4 = WorkLibrary
+		SccLocalPath4 = WorkLibrary
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Work.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EC2ECBB-2DB4-4DFC-8D30-3B3864959FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC2ECBB-2DB4-4DFC-8D30-3B3864959FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC2ECBB-2DB4-4DFC-8D30-3B3864959FA3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC2ECBB-2DB4-4DFC-8D30-3B3864959FA3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BEA611C-9032-4CD1-9AE5-627CE50FC1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1694B26-8DAB-4089-8276-327F7B7845DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1694B26-8DAB-4089-8276-327F7B7845DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1694B26-8DAB-4089-8276-327F7B7845DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1694B26-8DAB-4089-8276-327F7B7845DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8A96ED-61F7-4B9C-8780-F60995A2D6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8A96ED-61F7-4B9C-8780-F60995A2D6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8A96ED-61F7-4B9C-8780-F60995A2D6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8A96ED-61F7-4B9C-8780-F60995A2D6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

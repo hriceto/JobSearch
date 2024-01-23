@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f59c2e9d-80fe-4996-bd19-d4f03f037a95" name="hevtimov@HEVTIMOV-PC 2013-12-17 18:20:40" runUser="hevtimov-PC\hevtimov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="42aaf124-e037-48c0-99b0-4f81207af726">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="hevtimov_HEVTIMOV-PC 2013-12-17 18_20_40">
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll" />
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+            <RuntimeResolution>
+              <Directory path="%SystemDrive%\DEVELOPMENT\TFS\jobs website\Main\httpdocs" includeSubDirectories="true" />
+            </RuntimeResolution>
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-17T18:20:40.4019173-06:00" queuing="2013-12-17T18:20:42.0560119-06:00" start="2013-12-17T18:20:42.0990144-06:00" finish="2013-12-17T18:20:42.8760588-06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="1" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="86268f4a-5134-5e84-df8c-506e11ef3a05">
+      <Execution id="b6a3546d-ece5-49c6-b1eb-645fd12b60e0" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.UserAccountTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" />
+    </UnitTest>
+    <UnitTest name="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="5878e557-d467-b8b0-ec60-192bee13d715">
+      <Execution id="caba4852-ee7e-4314-bca8-5f3493feba19" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.XsltTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" />
+    </UnitTest>
+    <UnitTest name="EmailTest_EmailSubject_ShouldContainText" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="b7e059a4-18fd-990e-cffb-e5e839c9171e">
+      <Execution id="cb184187-8645-46b8-a48c-4dc113edeb4f" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.EmailTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmailTest_EmailSubject_ShouldContainText" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5878e557-d467-b8b0-ec60-192bee13d715" executionId="caba4852-ee7e-4314-bca8-5f3493feba19" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86268f4a-5134-5e84-df8c-506e11ef3a05" executionId="b6a3546d-ece5-49c6-b1eb-645fd12b60e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7e059a4-18fd-990e-cffb-e5e839c9171e" executionId="cb184187-8645-46b8-a48c-4dc113edeb4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="caba4852-ee7e-4314-bca8-5f3493feba19" testId="5878e557-d467-b8b0-ec60-192bee13d715" testName="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" computerName="HEVTIMOV-PC" duration="00:00:00.0771790" startTime="2013-12-17T18:20:42.1050147-06:00" endTime="2013-12-17T18:20:42.4800362-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caba4852-ee7e-4314-bca8-5f3493feba19">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method WorkTests.XsltTest.XsltTest_XsltTemplatePaths_ShouldExistInWebConfig threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at WorkTests.XsltTest.XsltTest_XsltTemplatePaths_ShouldExistInWebConfig() in C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\XsltTest.cs:line 73
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b6a3546d-ece5-49c6-b1eb-645fd12b60e0" testId="86268f4a-5134-5e84-df8c-506e11ef3a05" testName="AccountEmailVerification_CreateEmail_ShouldReturnTrue" computerName="HEVTIMOV-PC" duration="00:00:00.3111787" startTime="2013-12-17T18:20:42.4870366-06:00" endTime="2013-12-17T18:20:42.8050548-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6a3546d-ece5-49c6-b1eb-645fd12b60e0">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb184187-8645-46b8-a48c-4dc113edeb4f" testId="b7e059a4-18fd-990e-cffb-e5e839c9171e" testName="EmailTest_EmailSubject_ShouldContainText" computerName="HEVTIMOV-PC" duration="00:00:00.0049713" startTime="2013-12-17T18:20:42.8110551-06:00" endTime="2013-12-17T18:20:42.8200556-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb184187-8645-46b8-a48c-4dc113edeb4f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreNotEqual failed. Expected any value except:&lt;True&gt;. Actual:&lt;True&gt;. </Message>
+          <StackTrace>   at WorkTests.EmailTest.EmailTest_EmailSubject_ShouldContainText() in C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkTests\EmailTest.cs:line 73
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

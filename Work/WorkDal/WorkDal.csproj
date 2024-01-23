@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6B9B682-BCB0-4C79-9DB5-EC363A27FE2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HristoEvtimov.Websites.Work.WorkDal</RootNamespace>
+    <AssemblyName>HristoEvtimov.Websites.Work.WorkDal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\httpdocs\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryDataAccess.cs" />
+    <Compile Include="CompanyDataAccess.cs" />
+    <Compile Include="BillingAddressDataAccess.cs" />
+    <Compile Include="BlogDataAccess.cs" />
+    <Compile Include="CompanyApplicationDataAccess.cs" />
+    <Compile Include="TopicDataAccess.cs" />
+    <Compile Include="CouponDataAccess.cs" />
+    <Compile Include="EmailDataAccess.cs" />
+    <Compile Include="PartialClasses\Order.cs" />
+    <Compile Include="SettingDataAccess.cs" />
+    <Compile Include="CountryDataAccess.cs" />
+    <Compile Include="JobApplicationDataAccess.cs" />
+    <Compile Include="LogDataAccess.cs" />
+    <Compile Include="ExceptionDataAccess.cs" />
+    <Compile Include="EmploymentTypeDataAccess.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="DataClasses\JobSearchIndex.cs" />
+    <Compile Include="JobDataAccess.cs" />
+    <Compile Include="MenuDataAccess.cs" />
+    <Compile Include="OrderDataAccess.cs" />
+    <Compile Include="PartialClasses\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrlDataAccess.cs" />
+    <Compile Include="UserDataAccess.cs" />
+    <Compile Include="WorkModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ZipDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="WorkModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WorkModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

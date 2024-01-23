@@ -1,0 +1,4 @@
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\bin\Release\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\bin\Release\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\obj\Release\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkDal\obj\Release\HristoEvtimov.Websites.Work.WorkDal.pdb

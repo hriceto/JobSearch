@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e297e172-5bf5-47d7-9fd9-907450961983" name="hevtimov@HEVTIMOV-PC 2013-12-21 22:10:02" runUser="hevtimov-PC\hevtimov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="42aaf124-e037-48c0-99b0-4f81207af726">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="hevtimov_HEVTIMOV-PC 2013-12-21 22_10_02">
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll" />
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <Hosts type="ASP.NET">
+        <AspNet name="ASP.NET" executionType="Iis" urlToTest="http://work.evtimov/" />
+      </Hosts>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-21T22:10:02.2826233-06:00" queuing="2013-12-21T22:10:04.3847435-06:00" start="2013-12-21T22:10:04.4637481-06:00" finish="2013-12-21T22:10:04.7327634-06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HEVTIMOV-PC" outcome="Error" timestamp="2013-12-21T22:10:04.7177626-06:00">
+        <Text>The test adapter ('Microsoft.VisualStudio.TestTools.HostAdapters.WebHostAdapter, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. The URL specified ('http://work.evtimov/') does not correspond to a valid directory. Tests configured to run in ASP.NET in IIS require a valid directory to exist for the URL. The URL may be invalid or may not point to a valid Web application.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="86268f4a-5134-5e84-df8c-506e11ef3a05">
+      <Execution id="8380018e-a540-4001-96e0-8344f5fa2a2e" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.UserAccountTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="86268f4a-5134-5e84-df8c-506e11ef3a05" executionId="8380018e-a540-4001-96e0-8344f5fa2a2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8380018e-a540-4001-96e0-8344f5fa2a2e" testId="86268f4a-5134-5e84-df8c-506e11ef3a05" testName="AccountEmailVerification_CreateEmail_ShouldReturnTrue" computerName="HEVTIMOV-PC" endTime="2013-12-21T22:10:04.7157625-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8380018e-a540-4001-96e0-8344f5fa2a2e">
+      <Output>
+        <ErrorInfo>
+          <Message>The test adapter ('Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. The URL specified ('http://work.evtimov/') does not correspond to a valid directory. Tests configured to run in ASP.NET in IIS require a valid directory to exist for the URL. The URL may be invalid or may not point to a valid Web application.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,14 @@
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HristoEvtimov.Websites.Work.WorkLibrary.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HristoEvtimov.Websites.Work.WorkLibrary.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\AuthorizeNet.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HtmlAgilityPack.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HtmlAgilityPack.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\HtmlAgilityPack.xml
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\obj\Release\WorkLibrary.csprojResolveAssemblyReference.cache
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\obj\Release\HristoEvtimov.Websites.Work.WorkLibrary.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\obj\Release\HristoEvtimov.Websites.Work.WorkLibrary.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\Newtonsoft.Json.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkLibrary\bin\Release\Newtonsoft.Json.xml

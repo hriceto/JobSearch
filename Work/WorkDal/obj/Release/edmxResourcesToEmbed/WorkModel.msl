@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HristoEvtimovWebsitesWorkWorkDalStoreContainer" CdmEntityContainer="WorkEntities">
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BillingAddresses">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.BillingAddress">
+        <MappingFragment StoreEntitySet="BillingAddress">
+          <ScalarProperty Name="BillingAddressId" ColumnName="BillingAddressId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Blogs">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Blog">
+        <MappingFragment StoreEntitySet="Blog">
+          <ScalarProperty Name="BlogId" ColumnName="BlogId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SubTitle" ColumnName="SubTitle" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="SeUrl" ColumnName="SeUrl" />
+          <ScalarProperty Name="SeTitle" ColumnName="SeTitle" />
+          <ScalarProperty Name="SeDescription" ColumnName="SeDescription" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="NumberOfViews" ColumnName="NumberOfViews" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="PublishByUserId" ColumnName="PublishByUserId" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogTopics">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.BlogTopic">
+        <MappingFragment StoreEntitySet="BlogTopic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BlogId" ColumnName="BlogId" />
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NumberOfActiveJobs" ColumnName="NumberOfActiveJobs" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SeUrl" ColumnName="SeUrl" />
+          <ScalarProperty Name="SeTitle" ColumnName="SeTitle" />
+          <ScalarProperty Name="SeDescription" ColumnName="SeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="IsRecruiter" ColumnName="IsRecruiter" />
+          <ScalarProperty Name="AllowFreeJobPosts" ColumnName="AllowFreeJobPosts" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+          <ScalarProperty Name="CompanyDomain" ColumnName="CompanyDomain" />
+          <ScalarProperty Name="Reviewed" ColumnName="Reviewed" />
+          <ScalarProperty Name="ReviewedByUserId" ColumnName="ReviewedByUserId" />
+          <ScalarProperty Name="ReviewedDate" ColumnName="ReviewedDate" />
+          <ScalarProperty Name="AllowUnlimitedFreeJobPosts" ColumnName="AllowUnlimitedFreeJobPosts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyApplications">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.CompanyApplication">
+        <MappingFragment StoreEntitySet="CompanyApplication">
+          <ScalarProperty Name="CompanyApplicationId" ColumnName="CompanyApplicationId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="NumberOfPostsPerYear" ColumnName="NumberOfPostsPerYear" />
+          <ScalarProperty Name="NumberOfEmployees" ColumnName="NumberOfEmployees" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coupons">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Coupon">
+        <MappingFragment StoreEntitySet="Coupon">
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="NumberOfUses" ColumnName="NumberOfUses" />
+          <ScalarProperty Name="NumberOfUsesLimit" ColumnName="NumberOfUsesLimit" />
+          <ScalarProperty Name="DiscountPercentage" ColumnName="DiscountPercentage" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="LastUpdatedByUserId" ColumnName="LastUpdatedByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailBacklogs">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.EmailBacklog">
+        <MappingFragment StoreEntitySet="EmailBacklog">
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="IsHTML" ColumnName="IsHTML" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmploymentTypes">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.EmploymentType">
+        <MappingFragment StoreEntitySet="EmploymentType">
+          <ScalarProperty Name="EmploymentTypeId" ColumnName="EmploymentTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exceptions">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Exception">
+        <MappingFragment StoreEntitySet="Exception">
+          <ScalarProperty Name="ExceptionId" ColumnName="ExceptionId" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobApplications">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.JobApplication">
+        <MappingFragment StoreEntitySet="JobApplication">
+          <ScalarProperty Name="JobApplicationId" ColumnName="JobApplicationId" />
+          <ScalarProperty Name="JobPostId" ColumnName="JobPostId" />
+          <ScalarProperty Name="ApplicantUserId" ColumnName="ApplicantUserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CoverLetter" ColumnName="CoverLetter" />
+          <ScalarProperty Name="Resume" ColumnName="Resume" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobPosts">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.JobPost">
+        <MappingFragment StoreEntitySet="JobPost">
+          <ScalarProperty Name="JobPostId" ColumnName="JobPostId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SeUrl" ColumnName="SeUrl" />
+          <ScalarProperty Name="SeDescription" ColumnName="SeDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Requirements" ColumnName="Requirements" />
+          <ScalarProperty Name="Benefits" ColumnName="Benefits" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ZipInt" ColumnName="ZipInt" />
+          <ScalarProperty Name="EmploymentTypeId" ColumnName="EmploymentTypeId" />
+          <ScalarProperty Name="ReplyEmail" ColumnName="ReplyEmail" />
+          <ScalarProperty Name="ReplyUrl" ColumnName="ReplyUrl" />
+          <ScalarProperty Name="NumberOfViews" ColumnName="NumberOfViews" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ReviewRequired" ColumnName="ReviewRequired" />
+          <ScalarProperty Name="Reviewed" ColumnName="Reviewed" />
+          <ScalarProperty Name="ReviewedByUserId" ColumnName="ReviewedByUserId" />
+          <ScalarProperty Name="ReviewedDate" ColumnName="ReviewedDate" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsFreeAd" ColumnName="IsFreeAd" />
+          <ScalarProperty Name="IsPaidAd" ColumnName="IsPaidAd" />
+          <ScalarProperty Name="IsAnonymousAd" ColumnName="IsAnonymousAd" />
+          <ScalarProperty Name="Suspended" ColumnName="Suspended" />
+          <ScalarProperty Name="SuspendedByUserId" ColumnName="SuspendedByUserId" />
+          <ScalarProperty Name="SuspendedOn" ColumnName="SuspendedOn" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="PricePaidAd" ColumnName="PricePaidAd" />
+          <ScalarProperty Name="PriceAnonymousAd" ColumnName="PriceAnonymousAd" />
+          <ScalarProperty Name="PriceTotal" ColumnName="PriceTotal" />
+          <ScalarProperty Name="AddedToCart" ColumnName="AddedToCart" />
+          <ScalarProperty Name="AddedToCartDate" ColumnName="AddedToCartDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobPostCategories">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.JobPostCategory">
+        <MappingFragment StoreEntitySet="JobPostCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobPostId" ColumnName="JobPostId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Variable1" ColumnName="Variable1" />
+          <ScalarProperty Name="Variable2" ColumnName="Variable2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItem">
+          <ScalarProperty Name="MenuItemId" ColumnName="MenuItemId" />
+          <ScalarProperty Name="MenuTypeId" ColumnName="MenuTypeId" />
+          <ScalarProperty Name="UrlId" ColumnName="UrlId" />
+          <ScalarProperty Name="ParentMenuText" ColumnName="ParentMenuText" />
+          <ScalarProperty Name="MenuText" ColumnName="MenuText" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="OpenInNewTab" ColumnName="OpenInNewTab" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuTypes">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.MenuType">
+        <MappingFragment StoreEntitySet="MenuType">
+          <ScalarProperty Name="MenuTypeId" ColumnName="MenuTypeId" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="CouponDiscount" ColumnName="CouponDiscount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+          <ScalarProperty Name="BillingAddress1" ColumnName="BillingAddress1" />
+          <ScalarProperty Name="BillingAddress2" ColumnName="BillingAddress2" />
+          <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+          <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+          <ScalarProperty Name="BillingZip" ColumnName="BillingZip" />
+          <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+          <ScalarProperty Name="OrderComplete" ColumnName="OrderComplete" />
+          <ScalarProperty Name="GWAuthorizationCode" ColumnName="GWAuthorizationCode" />
+          <ScalarProperty Name="GWResponseCode" ColumnName="GWResponseCode" />
+          <ScalarProperty Name="GWMessage" ColumnName="GWMessage" />
+          <ScalarProperty Name="GWTransactionID" ColumnName="GWTransactionID" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="CardLastFour" ColumnName="CardLastFour" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Setting">
+        <MappingFragment StoreEntitySet="Setting">
+          <ScalarProperty Name="SettingId" ColumnName="SettingId" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+          <ScalarProperty Name="TopicGroupId" ColumnName="TopicGroupId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NumberOfBlogs" ColumnName="NumberOfBlogs" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SeUrl" ColumnName="SeUrl" />
+          <ScalarProperty Name="SeTitle" ColumnName="SeTitle" />
+          <ScalarProperty Name="SeDescription" ColumnName="SeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopicGroups">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.TopicGroup">
+        <MappingFragment StoreEntitySet="TopicGroup">
+          <ScalarProperty Name="TopicGroupId" ColumnName="TopicGroupId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urls">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.Url">
+        <MappingFragment StoreEntitySet="Url">
+          <ScalarProperty Name="UrlId" ColumnName="UrlId" />
+          <ScalarProperty Name="RewriteTo" ColumnName="RewriteTo" />
+          <ScalarProperty Name="RewriteFrom" ColumnName="RewriteFrom" />
+          <ScalarProperty Name="RedirectTo" ColumnName="RedirectTo" />
+          <ScalarProperty Name="RedirectFrom" ColumnName="RedirectFrom" />
+          <ScalarProperty Name="RequireSsl" ColumnName="RequireSsl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="OkToEmail" ColumnName="OkToEmail" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CoverLetter" ColumnName="CoverLetter" />
+          <ScalarProperty Name="Resume" ColumnName="Resume" />
+          <ScalarProperty Name="ShareResumeWithEmployers" ColumnName="ShareResumeWithEmployers" />
+          <ScalarProperty Name="EmailVerificationGuid" ColumnName="EmailVerificationGuid" />
+          <ScalarProperty Name="EmailVerificationGuidDate" ColumnName="EmailVerificationGuidDate" />
+          <ScalarProperty Name="ResetPasswordGuid" ColumnName="ResetPasswordGuid" />
+          <ScalarProperty Name="ResetPasswordGuidDate" ColumnName="ResetPasswordGuidDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsCompanyAdmin" ColumnName="IsCompanyAdmin" />
+          <ScalarProperty Name="OkToEmailGuid" ColumnName="OkToEmailGuid" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCategories">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.UserCategory">
+        <MappingFragment StoreEntitySet="UserCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZipCodes">
+      <EntityTypeMapping TypeName="HristoEvtimov.Websites.Work.WorkDal.ZipCode">
+        <MappingFragment StoreEntitySet="ZipCodes">
+          <ScalarProperty Name="ZipCodeId" ColumnName="ZipCodeId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="StateLong" ColumnName="StateLong" />
+          <ScalarProperty Name="StateShort" ColumnName="StateShort" />
+          <ScalarProperty Name="Lattitude" ColumnName="Lattitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+          <ScalarProperty Name="ViewportSouthWestLattitude" ColumnName="ViewportSouthWestLattitude" />
+          <ScalarProperty Name="ViewportSouthWestLongitude" ColumnName="ViewportSouthWestLongitude" />
+          <ScalarProperty Name="ViewportNorthEastLattitude" ColumnName="ViewportNorthEastLattitude" />
+          <ScalarProperty Name="ViewportNorthEastLongitude" ColumnName="ViewportNorthEastLongitude" />
+          <ScalarProperty Name="BoundsSouthWestLattitude" ColumnName="BoundsSouthWestLattitude" />
+          <ScalarProperty Name="BoundsSouthWestLongitude" ColumnName="BoundsSouthWestLongitude" />
+          <ScalarProperty Name="BoundsNorthEastLattitude" ColumnName="BoundsNorthEastLattitude" />
+          <ScalarProperty Name="BoundsNorthEastLongitude" ColumnName="BoundsNorthEastLongitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

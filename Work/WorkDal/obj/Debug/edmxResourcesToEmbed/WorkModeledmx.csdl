@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HristoEvtimov.Websites.Work.WorkDal" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WorkEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Membership" EntityType="HristoEvtimov.Websites.Work.WorkDal.aspnet_Membership" />
+    <EntitySet Name="BillingAddresses" EntityType="HristoEvtimov.Websites.Work.WorkDal.BillingAddress" />
+    <EntitySet Name="Blogs" EntityType="HristoEvtimov.Websites.Work.WorkDal.Blog" />
+    <EntitySet Name="BlogTopics" EntityType="HristoEvtimov.Websites.Work.WorkDal.BlogTopic" />
+    <EntitySet Name="Categories" EntityType="HristoEvtimov.Websites.Work.WorkDal.Category" />
+    <EntitySet Name="Companies" EntityType="HristoEvtimov.Websites.Work.WorkDal.Company" />
+    <EntitySet Name="CompanyApplications" EntityType="HristoEvtimov.Websites.Work.WorkDal.CompanyApplication" />
+    <EntitySet Name="Countries" EntityType="HristoEvtimov.Websites.Work.WorkDal.Country" />
+    <EntitySet Name="Coupons" EntityType="HristoEvtimov.Websites.Work.WorkDal.Coupon" />
+    <EntitySet Name="EmailBacklogs" EntityType="HristoEvtimov.Websites.Work.WorkDal.EmailBacklog" />
+    <EntitySet Name="EmploymentTypes" EntityType="HristoEvtimov.Websites.Work.WorkDal.EmploymentType" />
+    <EntitySet Name="Exceptions" EntityType="HristoEvtimov.Websites.Work.WorkDal.Exception" />
+    <EntitySet Name="JobApplications" EntityType="HristoEvtimov.Websites.Work.WorkDal.JobApplication" />
+    <EntitySet Name="JobPosts" EntityType="HristoEvtimov.Websites.Work.WorkDal.JobPost" />
+    <EntitySet Name="JobPostCategories" EntityType="HristoEvtimov.Websites.Work.WorkDal.JobPostCategory" />
+    <EntitySet Name="Logs" EntityType="HristoEvtimov.Websites.Work.WorkDal.Log" />
+    <EntitySet Name="MenuItems" EntityType="HristoEvtimov.Websites.Work.WorkDal.MenuItem" />
+    <EntitySet Name="MenuTypes" EntityType="HristoEvtimov.Websites.Work.WorkDal.MenuType" />
+    <EntitySet Name="Orders" EntityType="HristoEvtimov.Websites.Work.WorkDal.Order" />
+    <EntitySet Name="Settings" EntityType="HristoEvtimov.Websites.Work.WorkDal.Setting" />
+    <EntitySet Name="States" EntityType="HristoEvtimov.Websites.Work.WorkDal.State" />
+    <EntitySet Name="Topics" EntityType="HristoEvtimov.Websites.Work.WorkDal.Topic" />
+    <EntitySet Name="TopicGroups" EntityType="HristoEvtimov.Websites.Work.WorkDal.TopicGroup" />
+    <EntitySet Name="Urls" EntityType="HristoEvtimov.Websites.Work.WorkDal.Url" />
+    <EntitySet Name="Users" EntityType="HristoEvtimov.Websites.Work.WorkDal.User" />
+    <EntitySet Name="UserCategories" EntityType="HristoEvtimov.Websites.Work.WorkDal.UserCategory" />
+    <EntitySet Name="ZipCodes" EntityType="HristoEvtimov.Websites.Work.WorkDal.ZipCode" />
+    <AssociationSet Name="FK_BillingAddress_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_BillingAddress_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="BillingAddress" EntitySet="BillingAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blog_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Blog" EntitySet="Blogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blog_User1" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Blog" EntitySet="Blogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlogTopic_Blog" Association="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Blog">
+      <End Role="Blog" EntitySet="Blogs" />
+      <End Role="BlogTopic" EntitySet="BlogTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlogTopic_Topic" Association="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="BlogTopic" EntitySet="BlogTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPostCategory_Category" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="JobPostCategory" EntitySet="JobPostCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCategory_Category" Association="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="UserCategory" EntitySet="UserCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_Company" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Coupon" EntitySet="Coupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_Company" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Company" Association="HristoEvtimov.Websites.Work.WorkDal.FK_User_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Coupon" EntitySet="Coupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Coupon" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Order_Coupon">
+      <End Role="Coupon" EntitySet="Coupons" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Coupon" Association="HristoEvtimov.Websites.Work.WorkDal.FK_User_Coupon">
+      <End Role="Coupon" EntitySet="Coupons" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_EmploymentType" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_EmploymentType">
+      <End Role="EmploymentType" EntitySet="EmploymentTypes" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobApplication_JobPost" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_JobPost">
+      <End Role="JobPost" EntitySet="JobPosts" />
+      <End Role="JobApplication" EntitySet="JobApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobApplication_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="JobApplication" EntitySet="JobApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_Order" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_User1" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPost_User2" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User2">
+      <End Role="User" EntitySet="Users" />
+      <End Role="JobPost" EntitySet="JobPosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPostCategory_JobPost" Association="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_JobPost">
+      <End Role="JobPost" EntitySet="JobPosts" />
+      <End Role="JobPostCategory" EntitySet="JobPostCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItem_MenuType" Association="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_MenuType">
+      <End Role="MenuType" EntitySet="MenuTypes" />
+      <End Role="MenuItem" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItem_Url" Association="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_Url">
+      <End Role="Url" EntitySet="Urls" />
+      <End Role="MenuItem" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Order_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Topic_TopicGroup" Association="HristoEvtimov.Websites.Work.WorkDal.FK_Topic_TopicGroup">
+      <End Role="TopicGroup" EntitySet="TopicGroups" />
+      <End Role="Topic" EntitySet="Topics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCategory_User" Association="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserCategory" EntitySet="UserCategories" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="BillingAddress">
+    <Key>
+      <PropertyRef Name="BillingAddressId" />
+    </Key>
+    <Property Name="BillingAddressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Address1" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Address2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Zip" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BillingAddress_User" FromRole="BillingAddress" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="BlogId" />
+    </Key>
+    <Property Name="BlogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="SubTitle" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SeUrl" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeTitle" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeDescription" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Keywords" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfViews" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Published" Type="Boolean" Nullable="false" />
+    <Property Name="PublishByUserId" Type="Int32" Nullable="false" />
+    <Property Name="PublishDate" Type="DateTime" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User" FromRole="Blog" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User1" FromRole="Blog" ToRole="User" />
+    <NavigationProperty Name="BlogTopics" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Blog" FromRole="Blog" ToRole="BlogTopic" />
+  </EntityType>
+  <EntityType Name="BlogTopic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlogId" Type="Int32" Nullable="false" />
+    <Property Name="TopicId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Blog" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Blog" FromRole="BlogTopic" ToRole="Blog" />
+    <NavigationProperty Name="Topic" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Topic" FromRole="BlogTopic" ToRole="Topic" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfActiveJobs" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SeUrl" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeTitle" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeDescription" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="JobPostCategories" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_Category" FromRole="Category" ToRole="JobPostCategory" />
+    <NavigationProperty Name="UserCategories" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_Category" FromRole="Category" ToRole="UserCategory" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Address1" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Address2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Zip" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecruiter" Type="Boolean" Nullable="false" />
+    <Property Name="AllowFreeJobPosts" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyDomain" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Reviewed" Type="Boolean" Nullable="false" />
+    <Property Name="ReviewedByUserId" Type="Int32" />
+    <Property Name="ReviewedDate" Type="DateTime" />
+    <Property Name="AllowUnlimitedFreeJobPosts" Type="Boolean" />
+    <NavigationProperty Name="Coupons" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_Company" FromRole="Company" ToRole="Coupon" />
+    <NavigationProperty Name="JobPosts" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Company" FromRole="Company" ToRole="JobPost" />
+    <NavigationProperty Name="Users" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_User_Company" FromRole="Company" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CompanyApplication">
+    <Key>
+      <PropertyRef Name="CompanyApplicationId" />
+    </Key>
+    <Property Name="CompanyApplicationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfPostsPerYear" Type="Int32" />
+    <Property Name="NumberOfEmployees" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Coupon">
+    <Key>
+      <PropertyRef Name="CouponId" />
+    </Key>
+    <Property Name="CouponId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="CouponCode" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfUses" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfUsesLimit" Type="Int32" Nullable="false" />
+    <Property Name="DiscountPercentage" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdatedByUserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_Company" FromRole="Coupon" ToRole="Company" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_User" FromRole="Coupon" ToRole="User" />
+    <NavigationProperty Name="Orders" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Order_Coupon" FromRole="Coupon" ToRole="Order" />
+    <NavigationProperty Name="Users" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_User_Coupon" FromRole="Coupon" ToRole="User" />
+  </EntityType>
+  <EntityType Name="EmailBacklog">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="EmailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailTo" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="EmailFrom" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Subject" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Body" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsHTML" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmploymentType">
+    <Key>
+      <PropertyRef Name="EmploymentTypeId" />
+    </Key>
+    <Property Name="EmploymentTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="JobPosts" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_EmploymentType" FromRole="EmploymentType" ToRole="JobPost" />
+  </EntityType>
+  <EntityType Name="Exception">
+    <Key>
+      <PropertyRef Name="ExceptionId" />
+    </Key>
+    <Property Name="ExceptionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HelpLink" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Data" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="JobApplication">
+    <Key>
+      <PropertyRef Name="JobApplicationId" />
+    </Key>
+    <Property Name="JobApplicationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobPostId" Type="Int32" Nullable="false" />
+    <Property Name="ApplicantUserId" Type="Int32" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CoverLetter" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Resume" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="JobPost" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_JobPost" FromRole="JobApplication" ToRole="JobPost" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_User" FromRole="JobApplication" ToRole="User" />
+  </EntityType>
+  <EntityType Name="JobPost">
+    <Key>
+      <PropertyRef Name="JobPostId" />
+    </Key>
+    <Property Name="JobPostId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeUrl" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeDescription" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Keywords" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Requirements" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Benefits" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Position" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Zip" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ZipInt" Type="Int32" Nullable="false" />
+    <Property Name="EmploymentTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ReplyEmail" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ReplyUrl" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfViews" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ReviewRequired" Type="Boolean" Nullable="false" />
+    <Property Name="Reviewed" Type="Boolean" Nullable="false" />
+    <Property Name="ReviewedByUserId" Type="Int32" />
+    <Property Name="ReviewedDate" Type="DateTime" />
+    <Property Name="Published" Type="Boolean" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="IsFreeAd" Type="Boolean" Nullable="false" />
+    <Property Name="IsPaidAd" Type="Boolean" Nullable="false" />
+    <Property Name="IsAnonymousAd" Type="Boolean" Nullable="false" />
+    <Property Name="Suspended" Type="Boolean" Nullable="false" />
+    <Property Name="SuspendedByUserId" Type="Int32" />
+    <Property Name="SuspendedOn" Type="DateTime" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="PricePaidAd" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceAnonymousAd" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceTotal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AddedToCart" Type="Boolean" Nullable="false" />
+    <Property Name="AddedToCartDate" Type="DateTime" />
+    <NavigationProperty Name="Company" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Company" FromRole="JobPost" ToRole="Company" />
+    <NavigationProperty Name="EmploymentType" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_EmploymentType" FromRole="JobPost" ToRole="EmploymentType" />
+    <NavigationProperty Name="JobApplications" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_JobPost" FromRole="JobPost" ToRole="JobApplication" />
+    <NavigationProperty Name="Order" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Order" FromRole="JobPost" ToRole="Order" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User" FromRole="JobPost" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User1" FromRole="JobPost" ToRole="User" />
+    <NavigationProperty Name="User2" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User2" FromRole="JobPost" ToRole="User" />
+    <NavigationProperty Name="JobPostCategories" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_JobPost" FromRole="JobPost" ToRole="JobPostCategory" />
+  </EntityType>
+  <EntityType Name="JobPostCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobPostId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_Category" FromRole="JobPostCategory" ToRole="Category" />
+    <NavigationProperty Name="JobPost" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPostCategory_JobPost" FromRole="JobPostCategory" ToRole="JobPost" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Page" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Message" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="Variable1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Variable2" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MenuItem">
+    <Key>
+      <PropertyRef Name="MenuItemId" />
+    </Key>
+    <Property Name="MenuItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuTypeId" Type="Int32" Nullable="false" />
+    <Property Name="UrlId" Type="Int32" Nullable="false" />
+    <Property Name="ParentMenuText" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuText" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="OpenInNewTab" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MenuType" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_MenuType" FromRole="MenuItem" ToRole="MenuType" />
+    <NavigationProperty Name="Url" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_Url" FromRole="MenuItem" ToRole="Url" />
+  </EntityType>
+  <EntityType Name="MenuType">
+    <Key>
+      <PropertyRef Name="MenuTypeId" />
+    </Key>
+    <Property Name="MenuTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRole" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="MenuItems" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_MenuType" FromRole="MenuType" ToRole="MenuItem" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Subtotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Tax" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CouponDiscount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Total" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CouponId" Type="Int32" />
+    <Property Name="BillingAddress1" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BillingAddress2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BillingCity" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BillingState" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BillingZip" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="BillingCountry" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderComplete" Type="Boolean" Nullable="false" />
+    <Property Name="GWAuthorizationCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="GWResponseCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="GWMessage" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="GWTransactionID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CardType" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CardLastFour" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Salt" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Coupon" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Order_Coupon" FromRole="Order" ToRole="Coupon" />
+    <NavigationProperty Name="JobPosts" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_Order" FromRole="Order" ToRole="JobPost" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Order_User" FromRole="Order" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="SettingId" />
+    </Key>
+    <Property Name="SettingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SettingName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SettingValue" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Name="StateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="TopicId" />
+    </Key>
+    <Property Name="TopicId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopicGroupId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfBlogs" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SeUrl" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeTitle" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SeDescription" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="BlogTopics" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BlogTopic_Topic" FromRole="Topic" ToRole="BlogTopic" />
+    <NavigationProperty Name="TopicGroup" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Topic_TopicGroup" FromRole="Topic" ToRole="TopicGroup" />
+  </EntityType>
+  <EntityType Name="TopicGroup">
+    <Key>
+      <PropertyRef Name="TopicGroupId" />
+    </Key>
+    <Property Name="TopicGroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Topics" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Topic_TopicGroup" FromRole="TopicGroup" ToRole="Topic" />
+  </EntityType>
+  <EntityType Name="Url">
+    <Key>
+      <PropertyRef Name="UrlId" />
+    </Key>
+    <Property Name="UrlId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RewriteTo" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RewriteFrom" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RedirectTo" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RedirectFrom" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RequireSsl" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MenuItems" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_MenuItem_Url" FromRole="Url" ToRole="MenuItem" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="OkToEmail" Type="Boolean" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="CoverLetter" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Resume" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ShareResumeWithEmployers" Type="Boolean" Nullable="false" />
+    <Property Name="EmailVerificationGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmailVerificationGuidDate" Type="DateTime" Nullable="false" />
+    <Property Name="ResetPasswordGuid" Type="Guid" />
+    <Property Name="ResetPasswordGuidDate" Type="DateTime" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="IsCompanyAdmin" Type="Boolean" Nullable="false" />
+    <Property Name="OkToEmailGuid" Type="Guid" Nullable="false" />
+    <Property Name="CouponId" Type="Int32" />
+    <NavigationProperty Name="BillingAddresses" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_BillingAddress_User" FromRole="User" ToRole="BillingAddress" />
+    <NavigationProperty Name="Blogs" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User" FromRole="User" ToRole="Blog" />
+    <NavigationProperty Name="Blogs1" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Blog_User1" FromRole="User" ToRole="Blog" />
+    <NavigationProperty Name="Company" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_User_Company" FromRole="User" ToRole="Company" />
+    <NavigationProperty Name="Coupons" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Coupon_User" FromRole="User" ToRole="Coupon" />
+    <NavigationProperty Name="Coupon" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_User_Coupon" FromRole="User" ToRole="Coupon" />
+    <NavigationProperty Name="JobApplications" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobApplication_User" FromRole="User" ToRole="JobApplication" />
+    <NavigationProperty Name="JobPosts" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User" FromRole="User" ToRole="JobPost" />
+    <NavigationProperty Name="JobPosts1" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User1" FromRole="User" ToRole="JobPost" />
+    <NavigationProperty Name="JobPosts2" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_JobPost_User2" FromRole="User" ToRole="JobPost" />
+    <NavigationProperty Name="Orders" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_Order_User" FromRole="User" ToRole="Order" />
+    <NavigationProperty Name="UserCategories" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_User" FromRole="User" ToRole="UserCategory" />
+  </EntityType>
+  <EntityType Name="UserCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_Category" FromRole="UserCategory" ToRole="Category" />
+    <NavigationProperty Name="User" Relationship="HristoEvtimov.Websites.Work.WorkDal.FK_UserCategory_User" FromRole="UserCategory" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ZipCode">
+    <Key>
+      <PropertyRef Name="ZipCodeId" />
+    </Key>
+    <Property Name="ZipCodeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FullAddress" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Zip" Type="Int32" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="County" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateLong" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateShort" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Lattitude" Type="Decimal" Nullable="false" Precision="18" Scale="10" />
+    <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="18" Scale="10" />
+    <Property Name="LocationType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ViewportSouthWestLattitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="ViewportSouthWestLongitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="ViewportNorthEastLattitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="ViewportNorthEastLongitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="BoundsSouthWestLattitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="BoundsSouthWestLongitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="BoundsNorthEastLattitude" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="BoundsNorthEastLongitude" Type="Decimal" Precision="18" Scale="10" />
+  </EntityType>
+  <Association Name="FK_BillingAddress_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1" />
+    <End Role="BillingAddress" Type="HristoEvtimov.Websites.Work.WorkDal.BillingAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="BillingAddress">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blog_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1" />
+    <End Role="Blog" Type="HristoEvtimov.Websites.Work.WorkDal.Blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Blog">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blog_User1">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1" />
+    <End Role="Blog" Type="HristoEvtimov.Websites.Work.WorkDal.Blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Blog">
+        <PropertyRef Name="PublishByUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlogTopic_Blog">
+    <End Role="Blog" Type="HristoEvtimov.Websites.Work.WorkDal.Blog" Multiplicity="1" />
+    <End Role="BlogTopic" Type="HristoEvtimov.Websites.Work.WorkDal.BlogTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blog">
+        <PropertyRef Name="BlogId" />
+      </Principal>
+      <Dependent Role="BlogTopic">
+        <PropertyRef Name="BlogId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlogTopic_Topic">
+    <End Role="Topic" Type="HristoEvtimov.Websites.Work.WorkDal.Topic" Multiplicity="1" />
+    <End Role="BlogTopic" Type="HristoEvtimov.Websites.Work.WorkDal.BlogTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="TopicId" />
+      </Principal>
+      <Dependent Role="BlogTopic">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPostCategory_Category">
+    <End Role="Category" Type="HristoEvtimov.Websites.Work.WorkDal.Category" Multiplicity="1" />
+    <End Role="JobPostCategory" Type="HristoEvtimov.Websites.Work.WorkDal.JobPostCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="JobPostCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCategory_Category">
+    <End Role="Category" Type="HristoEvtimov.Websites.Work.WorkDal.Category" Multiplicity="1" />
+    <End Role="UserCategory" Type="HristoEvtimov.Websites.Work.WorkDal.UserCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="UserCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_Company">
+    <End Role="Company" Type="HristoEvtimov.Websites.Work.WorkDal.Company" Multiplicity="0..1" />
+    <End Role="Coupon" Type="HristoEvtimov.Websites.Work.WorkDal.Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_Company">
+    <End Role="Company" Type="HristoEvtimov.Websites.Work.WorkDal.Company" Multiplicity="1" />
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Company">
+    <End Role="Company" Type="HristoEvtimov.Websites.Work.WorkDal.Company" Multiplicity="0..1" />
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="0..1" />
+    <End Role="Coupon" Type="HristoEvtimov.Websites.Work.WorkDal.Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Coupon">
+    <End Role="Coupon" Type="HristoEvtimov.Websites.Work.WorkDal.Coupon" Multiplicity="0..1" />
+    <End Role="Order" Type="HristoEvtimov.Websites.Work.WorkDal.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coupon">
+        <PropertyRef Name="CouponId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CouponId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Coupon">
+    <End Role="Coupon" Type="HristoEvtimov.Websites.Work.WorkDal.Coupon" Multiplicity="0..1" />
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coupon">
+        <PropertyRef Name="CouponId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CouponId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_EmploymentType">
+    <End Role="EmploymentType" Type="HristoEvtimov.Websites.Work.WorkDal.EmploymentType" Multiplicity="1" />
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmploymentType">
+        <PropertyRef Name="EmploymentTypeId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="EmploymentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobApplication_JobPost">
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="1" />
+    <End Role="JobApplication" Type="HristoEvtimov.Websites.Work.WorkDal.JobApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobPost">
+        <PropertyRef Name="JobPostId" />
+      </Principal>
+      <Dependent Role="JobApplication">
+        <PropertyRef Name="JobPostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobApplication_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="JobApplication" Type="HristoEvtimov.Websites.Work.WorkDal.JobApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="JobApplication">
+        <PropertyRef Name="ApplicantUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_Order">
+    <End Role="Order" Type="HristoEvtimov.Websites.Work.WorkDal.Order" Multiplicity="0..1" />
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_User1">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="0..1" />
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="ReviewedByUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPost_User2">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="0..1" />
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="JobPost">
+        <PropertyRef Name="SuspendedByUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPostCategory_JobPost">
+    <End Role="JobPost" Type="HristoEvtimov.Websites.Work.WorkDal.JobPost" Multiplicity="1" />
+    <End Role="JobPostCategory" Type="HristoEvtimov.Websites.Work.WorkDal.JobPostCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobPost">
+        <PropertyRef Name="JobPostId" />
+      </Principal>
+      <Dependent Role="JobPostCategory">
+        <PropertyRef Name="JobPostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItem_MenuType">
+    <End Role="MenuType" Type="HristoEvtimov.Websites.Work.WorkDal.MenuType" Multiplicity="1" />
+    <End Role="MenuItem" Type="HristoEvtimov.Websites.Work.WorkDal.MenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuType">
+        <PropertyRef Name="MenuTypeId" />
+      </Principal>
+      <Dependent Role="MenuItem">
+        <PropertyRef Name="MenuTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItem_Url">
+    <End Role="Url" Type="HristoEvtimov.Websites.Work.WorkDal.Url" Multiplicity="1" />
+    <End Role="MenuItem" Type="HristoEvtimov.Websites.Work.WorkDal.MenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Url">
+        <PropertyRef Name="UrlId" />
+      </Principal>
+      <Dependent Role="MenuItem">
+        <PropertyRef Name="UrlId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1" />
+    <End Role="Order" Type="HristoEvtimov.Websites.Work.WorkDal.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Topic_TopicGroup">
+    <End Role="TopicGroup" Type="HristoEvtimov.Websites.Work.WorkDal.TopicGroup" Multiplicity="1" />
+    <End Role="Topic" Type="HristoEvtimov.Websites.Work.WorkDal.Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicGroup">
+        <PropertyRef Name="TopicGroupId" />
+      </Principal>
+      <Dependent Role="Topic">
+        <PropertyRef Name="TopicGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCategory_User">
+    <End Role="User" Type="HristoEvtimov.Websites.Work.WorkDal.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserCategory" Type="HristoEvtimov.Websites.Work.WorkDal.UserCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserCategory">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

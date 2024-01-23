@@ -1,0 +1,22 @@
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkSearch.dll
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkSearch.pdb
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\Lucene.Net.dll
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\Lucene.Net.pdb
+C:\DEVELOPMENT\Work\Work\WorkSearch\bin\Debug\Lucene.Net.xml
+C:\DEVELOPMENT\Work\Work\WorkSearch\obj\Debug\ResolveAssemblyReference.cache
+C:\DEVELOPMENT\Work\Work\WorkSearch\obj\Debug\HristoEvtimov.Websites.Work.WorkSearch.dll
+C:\DEVELOPMENT\Work\Work\WorkSearch\obj\Debug\HristoEvtimov.Websites.Work.WorkSearch.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkSearch.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkSearch.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\Lucene.Net.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\Lucene.Net.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\Lucene.Net.xml
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\bin\Debug\HristoEvtimov.Websites.Work.WorkDal.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkSearch.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkSearch.pdb
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\obj\Debug\WorkSearch.csprojResolveAssemblyReference.cache
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\obj\Debug\HristoEvtimov.Websites.Work.WorkSearch.dll
+C:\DEVELOPMENT\TFS\jobs website\Main\Work\WorkSearch\obj\Debug\HristoEvtimov.Websites.Work.WorkSearch.pdb

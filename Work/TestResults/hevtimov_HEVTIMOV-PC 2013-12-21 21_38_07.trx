@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b0cc2353-5e6c-406c-9039-fcb20b704a0b" name="hevtimov@HEVTIMOV-PC 2013-12-21 21:38:07" runUser="hevtimov-PC\hevtimov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="42aaf124-e037-48c0-99b0-4f81207af726">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="hevtimov_HEVTIMOV-PC 2013-12-21 21_38_07">
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkDal.dll" />
+      <DeploymentItem filename="C:\DEVELOPMENT\TFS\jobs website\Main\httpdocs\bin\HristoEvtimov.Websites.Work.WorkLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <Hosts type="ASP.NET">
+        <AspNet name="ASP.NET" executionType="Iis" urlToTest="http://work.evtimov/" />
+      </Hosts>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-21T21:38:07.1760855-06:00" queuing="2013-12-21T21:38:08.7971782-06:00" start="2013-12-21T21:38:08.8201795-06:00" finish="2013-12-21T21:38:08.8501812-06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="3" executed="3" error="3" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HEVTIMOV-PC" outcome="Error" timestamp="2013-12-21T21:38:08.8381805-06:00">
+        <Text>The test adapter ('Microsoft.VisualStudio.TestTools.HostAdapters.WebHostAdapter, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. The URL specified ('http://work.evtimov/') does not correspond to a valid directory. Tests configured to run in ASP.NET in IIS require a valid directory to exist for the URL. The URL may be invalid or may not point to a valid Web application.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="86268f4a-5134-5e84-df8c-506e11ef3a05">
+      <Execution id="602bcc2d-4a27-4638-a61f-1f3eb9cd19b6" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.UserAccountTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountEmailVerification_CreateEmail_ShouldReturnTrue" />
+    </UnitTest>
+    <UnitTest name="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="5878e557-d467-b8b0-ec60-192bee13d715">
+      <Execution id="c05f389c-e064-4801-926c-d11c9750b71d" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.XsltTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" />
+    </UnitTest>
+    <UnitTest name="EmailTest_EmailSubject_ShouldContainText" storage="c:\development\tfs\jobs website\main\work\worktests\bin\debug\worktests.dll" id="b7e059a4-18fd-990e-cffb-e5e839c9171e">
+      <Execution id="a3b1db4b-2275-4ccd-a4f6-038c66d18373" />
+      <TestMethod codeBase="C:/DEVELOPMENT/TFS/jobs website/Main/Work/WorkTests/bin/Debug/WorkTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WorkTests.EmailTest, WorkTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmailTest_EmailSubject_ShouldContainText" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5878e557-d467-b8b0-ec60-192bee13d715" executionId="c05f389c-e064-4801-926c-d11c9750b71d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86268f4a-5134-5e84-df8c-506e11ef3a05" executionId="602bcc2d-4a27-4638-a61f-1f3eb9cd19b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7e059a4-18fd-990e-cffb-e5e839c9171e" executionId="a3b1db4b-2275-4ccd-a4f6-038c66d18373" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c05f389c-e064-4801-926c-d11c9750b71d" testId="5878e557-d467-b8b0-ec60-192bee13d715" testName="XsltTest_XsltTemplatePaths_ShouldExistInWebConfig" computerName="HEVTIMOV-PC" endTime="2013-12-21T21:38:08.8341803-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c05f389c-e064-4801-926c-d11c9750b71d">
+      <Output>
+        <ErrorInfo>
+          <Message>The test adapter ('Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. The URL specified ('http://work.evtimov/') does not correspond to a valid directory. Tests configured to run in ASP.NET in IIS require a valid directory to exist for the URL. The URL may be invalid or may not point to a valid Web application.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="602bcc2d-4a27-4638-a61f-1f3eb9cd19b6" testId="86268f4a-5134-5e84-df8c-506e11ef3a05" testName="AccountEmailVerification_CreateEmail_ShouldReturnTrue" computerName="HEVTIMOV-PC" endTime="2013-12-21T21:38:08.8351804-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="602bcc2d-4a27-4638-a61f-1f3eb9cd19b6">
+      <Output>
+        <ErrorInfo>
+          <Message>The test adapter ('Microsoft.VisualStudio.TestTools.HostAdapters.WebHostAdapter, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. </Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3b1db4b-2275-4ccd-a4f6-038c66d18373" testId="b7e059a4-18fd-990e-cffb-e5e839c9171e" testName="EmailTest_EmailSubject_ShouldContainText" computerName="HEVTIMOV-PC" endTime="2013-12-21T21:38:08.8361804-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3b1db4b-2275-4ccd-a4f6-038c66d18373">
+      <Output>
+        <ErrorInfo>
+          <Message>The test adapter ('Microsoft.VisualStudio.TestTools.HostAdapters.WebHostAdapter, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a') required to execute this test could not be loaded. Check that the test adapter is installed properly. </Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
